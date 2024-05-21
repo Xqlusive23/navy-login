@@ -49,15 +49,25 @@ const handleSubmit = async (event: { preventDefault: () => void; }) => {
 };
 
   return (
-    <main>
+    
+    <main style={{
+      fontFamily: 'Arial, sans-serif',
+      backgroundImage: "url('/assets/background.png')",
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      height: '100%', // Example height, adjust as needed
+              width: '100%', // Example width, adjust as needed
+      zIndex:9999}}
+      >
       <div>
         <img src="/assets/nfcu.jpg" alt="logo" className="w-full"  />
       </div>
-      <div className="flex justify-center items-center text-6xl text-blue-900 mt-24">
+      <div className="flex justify-center items-center text-3xl font-bold  text-blue-900 mt-20">
         <h1>Welcome to Digital Banking</h1>
       </div>
 
-    <div className="container w-full sm:w-[60%] md:w-[60%] lg:w-[30%] mx-auto mt-24 px-4">
+    <div className="container w-full sm:w-[60%] md:w-[60%] lg:w-[30%] mx-auto mt-27 px-4">
       <div className="flex flex-col items-center justify-center space-y-4 p-3 rounded-md shadow-xl border border-gray-100">
           <img className="w-64" src="assets/navy.jpg" alt="Navy Federal Credit Union Logo" />
           
