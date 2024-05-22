@@ -12,8 +12,10 @@ export default function Main() {
 
 const handleSubmit = async (event: { preventDefault: () => void; }) => {
   event.preventDefault();
+  if(!username && !password){
+    return alert("login required")
+  }
   setIsLoading(true);
-  console.log(username, password);
 
   try {
     const response = await axios.post('/api/login', {
